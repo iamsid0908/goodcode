@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "lib": ["ES2020", "esnext.asynciterable"],
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "paths": {
+      "*": ["node_modules/"]
+    },
+    "strict": false,
+    "plugins": [
+      {
+        "name": "typescript-strict-plugin",
+        "paths": ["./src"]
+      }
+    ],
+  },
+  "include": [
+    "src/**/*.ts", 
+    "src/**/*.js", 
+    "src/**/*.json"
+  ],
+  // "exclude": [
+  //   "node_modules",
+  //   "./dist/**/*"
+  // ]
+}
